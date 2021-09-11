@@ -3,14 +3,21 @@ import { MdAddShoppingCart } from "react-icons/md";
 
 import styles from "./styles.module.scss";
 
-export function Card() {
+interface CardProps{
+  img: any;
+  title: string;
+  price: number;
+  priceOld: number;
+}
+
+export function Card({ img, title, price, priceOld} : CardProps) {
   return (
     <section className={styles.card}>
       <div>
         <span><p>OFF</p></span>
-        <img src="images/shoes.png" alt="Sapato Floater Preto" />
+        <img src={img} alt={title} />
       </div>
-      <h3>Sapato Floater Preto</h3>
+      <h3>{title}</h3>
       <div>
         <FaStar />
         <FaStar />
@@ -24,7 +31,7 @@ export function Card() {
           {new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "BRL",
-          }).format(299)}
+          }).format(priceOld)}
         </span>
       </p>
       <h2>
@@ -33,7 +40,7 @@ export function Card() {
           {new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "BRL",
-          }).format(259)}
+          }).format(price)}
         </span>
       </h2>
       <p>ou em 9x de R$ 28,87</p>

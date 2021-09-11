@@ -27,42 +27,44 @@ export function News() {
       <div className={styles.content}>
         <h2>Participe de nossas news com promoções e novidades!</h2>
         <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Digite seu nome"
-            value={values.username}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            className={
-              touched.username && errors.username && styles.borderError
-            }
-          />
+          <div>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Digite seu nome"
+              value={values.username}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              className={
+                touched.username && errors.username && styles.borderError
+              }
+            />
+            {touched.username && errors.username ? (
+              <span className={styles.error}>{errors.username}</span>
+            ) : null}
+          </div>
           
-
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Digite seu e-mail"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            className={touched.email && errors.email && styles.borderError}
-          />
+          
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              className={touched.email && errors.email && styles.borderError}
+            />
+            {touched.email && errors.email ? (
+              <span className={styles.error}>{errors.email}</span>
+            ) : null}
+          </div>
           <button type="submit" onClick={() => handleSubmit()}>
             Eu quero
           </button>
         </form>
-        <div>
-        {touched.username && errors.username ? (
-            <span className={styles.error}>{errors.username}</span>
-          ) : null}
-          {touched.email && errors.email ? (
-            <span className={styles.error}>{errors.email}</span>
-          ) : null}
-        </div>
       </div>
     </div>
   );

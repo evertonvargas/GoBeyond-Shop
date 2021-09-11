@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { SliderFullWidth } from "../components/SliderFullWidth";
 
-import styles from "./home.module.scss"
 import { SliderProducts } from "../components/SliderProducts";
 import { News } from "../components/News";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
@@ -11,10 +11,11 @@ export default function Home() {
       <Head>
         <title>Go Beyond</title>
       </Head>
-      <main className={styles.contentContainer}>
+      <main>
         <SliderFullWidth />
         <SliderProducts />
         <News />
+        <Footer />
       </main>
     </>
   )

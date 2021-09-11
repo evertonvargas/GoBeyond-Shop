@@ -52,20 +52,7 @@
     }
 
     div{
-      >a{
-        margin-right: 2rem;
-
-        &+a{
-          position: relative;
-
-          svg{
-            position: absolute;
-            position: absolute;
-            left: 0;
-            bottom: 4px;
-          }
-        }
-      }
+      >a{margin-right: 2rem;}
     }
   }
 }
