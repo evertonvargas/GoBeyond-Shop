@@ -1,0 +1,52 @@
+.slide{
+  height: 430px;
+  width: 100vw;
+  background: var(--blue-700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    color: var(--yellow-600);
+  }
+
+  div{
+    position: absolute;
+    bottom: 0;
+
+    span{
+      cursor: pointer;
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+      background-color: var(--gray-500);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color .6s ease;
+
+      &.active{
+        background-color: var(--black-900);
+      }
+    }
+  }
+
+  
+
+  button{
+    position: absolute;
+    top: 200px;
+    background: transparent;
+    color: var(--white);
+    outline: none;
+    border: none;
+
+    &.prev{
+      left: 1.5rem;
+    }
+
+    &.next{
+      right: 1.5rem;
+    }
+  }
+} 
