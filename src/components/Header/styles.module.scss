@@ -1,0 +1,70 @@
+.headerContainer {
+
+  .headerContent{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+
+    nav{
+      color: var(--gray-800);
+      display: flex;
+      gap: 2rem;
+
+      a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+
+    form{
+      border-bottom: 1px solid var(--gray-700);
+      padding-bottom: 3px;
+
+      input{
+        width: 300px;
+        color: var(--gray-700);
+        font-size: 1.3rem;
+
+        &:focus{
+          outline: none;
+          border: none;
+        }
+      }
+
+      button{
+        background: var(--white);
+        border: none;
+        position: relative;
+        
+        svg{
+          position: absolute;
+          top: -13px;
+          right: 2px;
+        } 
+      }
+    }
+
+    div{
+      >a{
+        margin-right: 2rem;
+
+        &+a{
+          position: relative;
+
+          svg{
+            position: absolute;
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
