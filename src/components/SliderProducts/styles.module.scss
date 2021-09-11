@@ -1,0 +1,54 @@
+.slideProducts{
+  max-width: 1300px;
+  margin: 2rem auto 4rem;
+
+  >h2{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: .5rem 3.5rem;
+    margin: 2rem;
+    position: relative;
+
+    &::after{
+      content: '';
+      width: 6.3rem;
+      height: .5rem;
+      background: var(--yellow-700);
+      position:absolute;
+      bottom: 0;
+      left: 3.5rem;
+    }
+  }
+
+  .slide{
+    background: var(--white);  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .prevSlide, .nextSlide{
+      position: absolute;
+      top: 200px;
+      background: transparent;
+      color: var(--gray-700);
+      outline: none;
+      border: none;
+      transition: filter 0.2s;
+  
+      &:hover{
+        filter: brightness(0.7);
+      }
+  
+      &.prevSlide{
+        left: 1.5rem;
+      }
+  
+      &.nextSlide{
+        right: 1.5rem;
+      }
+    }
+  }
+}
+

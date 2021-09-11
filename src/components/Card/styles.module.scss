@@ -1,3 +1,95 @@
-.card{
-  
+.card {
+  box-shadow: 5px 5px 15px 0px var(--black-750);
+  max-width: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & div:first-child{
+    position: relative;
+    width: 100%;
+
+    & span{
+      font-weight: 600;
+      font-size: 1.4rem;
+      width: 5.5rem;
+      height: 5.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("../../../public/images/triangle.svg");
+
+      p{
+        color: var(--white);
+        padding: .5rem 0 0 2.5rem; 
+      }
+    }
+  }
+
+  h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    padding: .5rem;
+  }
+
+  div{
+
+    svg {
+      color: var(--gray-500);
+      cursor: pointer;
+
+      &:first-child{
+        color: var(--yellow-700);
+      }
+    }
+
+    &:hover svg {
+      color: var(--yellow-700);
+    }
+
+    & svg:hover ~ svg {
+      color: var(--gray-500);
+    }
+  }
+
+  p{
+    font-size: 1.2rem;
+    color: var(--gray-700);
+
+    span{
+      padding-left: .5rem;
+    }
+  }
+
+  h2{
+    font-weight: bold;
+    color: var(--black-900);
+    font-size: 1.8rem;
+
+    span{
+      padding-left: .5rem;
+    }
+  }
+
+  button {
+    background: var(--green); 
+    border: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    margin: 1rem;
+    transition: filter 0.2s;
+
+    &:hover{
+      filter: brightness(0.96);
+    }
+
+    span{
+      font-size: 1.2rem;
+      color: var(--white);
+    }
+  }
 }
