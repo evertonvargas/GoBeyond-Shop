@@ -38,4 +38,39 @@ export const products= [
     "price": 219.9,
     "image": "./images/tenis.png"
   },
+  {
+    "id": 6,
+    "title": "Tênis de couro",
+    "priceOld": 299.0,
+    "price": 179.9,
+    "image": "./images/shoes.png"
+  },
+  {
+    "id": 7,
+    "title": "Tênis VR Caminhada ",
+    "priceOld": 150.0,
+    "price": 139.9,
+    "image": "images/tenis2.png"
+  },
+  {
+    "id": 8,
+    "title": "Tênis Adidas",
+    "priceOld": 450.0,
+    "price": 219.9,
+    "image": "./images/shoes.png"
+  },
+  {
+    "id": 9,
+    "title": "Tênis VR Caminhada ",
+    "priceOld": 200.0,
+    "price": 139.9,
+    "image": "images/tenis3.png"
+  },
+  {
+    "id": 10,
+    "title": "Sapato Lite 2.0",
+    "priceOld": 265.0,
+    "price": 219.9,
+    "image": "./images/tenis.png"
+  },
 ]

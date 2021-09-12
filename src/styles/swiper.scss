@@ -46,10 +46,11 @@ $themeColor: #007aff !default;
 }
 .swiper-slide {
   flex-shrink: 0;
-  width: 80px;
+  width: 100%;
   height: 100%;
   position: relative;
   transition-property: transform;
+
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;

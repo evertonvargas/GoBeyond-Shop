@@ -9,32 +9,25 @@ import styles from "./styles.module.scss"
 
 export function SliderSwiper() {
   return (
-    <div className={styles.container}>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={1}
-        slidesPerView={3}
+        modules={[Navigation]}
+        spaceBetween={15}
+        slidesPerView={4}
         breakpoints={{
           1300: {
-            slidesPerView: 4,
-            spaceBetween: 5,
+            slidesPerView: 4
           },
           900: {
-            slidesPerView: 3,
-            spaceBetween: 5,
+            slidesPerView: 3
           },
           500:{
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 2
           },
           10: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 1
           },
         }}
         navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -50,6 +43,5 @@ export function SliderSwiper() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
   );
 }
