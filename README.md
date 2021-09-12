@@ -4,11 +4,13 @@
     <img alt="GoBeyond Layou" src="public/images/desafio.JPG" width="100%" />
 </h1>
 
-### O desafio
+## 🚀 O desafio
 
 Fazer o layout da loja e implementar algumas funcionalidades.
 
-## 🧬 Technologies
+Site: https://go-beyond-shop.vercel.app/
+
+## :crystal_ball: Technologies
 
 This project was developed using the following technologies:
 - [React](https://reactjs.org)
@@ -17,7 +19,7 @@ This project was developed using the following technologies:
 - [Yup](https://www.npmjs.com/package/yup?activeTab=readme)
 - [Formik](https://formik.org/)
 
-## 🚀 Getting started
+## :arrow_forward: Instalação e uso
 
 Clone the project and access the folder
 
