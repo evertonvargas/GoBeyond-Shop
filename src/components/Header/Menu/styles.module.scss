@@ -101,21 +101,12 @@
               color: var(--gray-800);
               font-size: 1.6rem;
               padding: 0.5rem 0 0.5rem 1rem;
-
-              &:hover {
-              background: #d53f86;
-              color: var(--white);
-            }
             }
           }
         }
 
         a {
           font-size: 2rem;
-
-          &:hover {
-            color: var(--green);
-          }
         }
       }
     }
