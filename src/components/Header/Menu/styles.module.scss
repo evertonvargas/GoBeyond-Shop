@@ -7,30 +7,60 @@
     list-style: none;
     display: flex;
 
-    li:not(:first-child) {
-      margin-right: 1rem;
-    }
+    li {
+      margin: 0 0 0 2rem;
 
-    a {
-      text-decoration: none;
-      padding: 7px 10px 10px;
-      position: relative;
-
-      &:hover {
-        color: var(--green);
+      &:not(:first-child) {
+        margin-right: 1rem;
       }
 
-      svg {
-        position: absolute;
-        bottom: 1rem;
+      &.drop {
+        position: relative;
+
+        &:hover {
+          color: var(--green);
+        }
+
+        svg {
+          position: absolute;
+          bottom: 1rem;
+          top: 0.3rem;
+        }
+
+        div {
+          position: absolute;
+          display: flex;
+          z-index: 4;
+          flex-direction: column;
+          background: #2e3040;
+
+          a {
+            color: var(--white);
+            margin: 0;
+
+            &:hover {
+              background: #d53f86;
+              color: var(--white);
+            }
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        padding: 7px 10px 10px;
+
+        &:hover {
+          color: var(--green);
+        }
       }
     }
   }
 }
 
 @media (max-width: 1150px) {
-  .Container{
-    nav ul li{
+  .Container {
+    nav ul li {
       display: none;
     }
   }
@@ -40,19 +70,52 @@
     width: 200px;
     position: absolute;
     top: 10%;
-    left: 2.3rem;
+    left: 3.3rem;
     z-index: 3;
-  
+
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       li {
         list-style: none;
         padding-bottom: 1rem;
-  
+        font-size: 2rem;
+
+        &.drop {
+          position: relative;
+
+          svg {
+            position: absolute;
+            bottom: 1rem;
+            top: 0.3rem;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            background: var(--white);
+
+            a {
+              color: var(--gray-800);
+              font-size: 1.6rem;
+              padding: 0.5rem 0 0.5rem 1rem;
+
+              &:hover {
+              background: #d53f86;
+              color: var(--white);
+            }
+            }
+          }
+        }
+
         a {
           font-size: 2rem;
+
+          &:hover {
+            color: var(--green);
+          }
         }
       }
     }
