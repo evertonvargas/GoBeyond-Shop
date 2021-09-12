@@ -1,0 +1,60 @@
+.Container {
+  color: var(--gray-800);
+  display: flex;
+  gap: 2rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li:not(:first-child) {
+      margin-right: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 7px 10px 10px;
+      position: relative;
+
+      &:hover {
+        color: var(--green);
+      }
+
+      svg {
+        position: absolute;
+        bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .Container{
+    nav ul li{
+      display: none;
+    }
+  }
+
+  .MenuHamburguer {
+    color: var(--gray-800);
+    width: 200px;
+    position: absolute;
+    top: 10%;
+    left: 2.3rem;
+    z-index: 3;
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      li {
+        list-style: none;
+        padding-bottom: 1rem;
+  
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation} from "swiper";
 
 import { Card } from "../Card";
 import { products } from "../../../products";
-
-import styles from "./styles.module.scss"
 
 export function SliderSwiper() {
   return (
