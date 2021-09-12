@@ -9,16 +9,23 @@ import { products } from "../../../products";
 function getWindowDimensions() {
   const { innerWidth: width } = window;
   return {
-    width
+    width,
   };
 }
 
 export function SliderProducts() {
   const [slide, setSlide] = useState(0);
+  const [number, setNumber] = useState(0);
 
-  function handlePrevSlide() {}
+  function handlePrevSlide() {
+    console.log(slide)
+    setSlide(slide - 1 < 0 ? 5 - 1 : slide - 1);
+  }
 
-  function handleNextSlide() {}
+  function handleNextSlide() {
+    console.log(slide)
+    setSlide(slide + 1 >= 5 ? 0 : slide + 1);
+  }
 
   return (
     <section className={styles.slideProducts}>
@@ -27,7 +34,6 @@ export function SliderProducts() {
         <button className={styles.prevSlide} onClick={handlePrevSlide}>
           <MdKeyboardArrowLeft size={50} />
         </button>
-
         {products.map((product) => (
           <Card key={product.id} img={product.image} title={product.title} priceOld={product.priceOld} price={product.price} />
         ))}

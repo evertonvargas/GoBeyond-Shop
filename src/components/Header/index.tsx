@@ -10,8 +10,6 @@ export function Header() {
   const [menu, setMenu] = useState(false);
 
   function handleTeste() {
-    console.log("Aqui");
-    console.log(menu);
     setMenu(!menu);
   }
 
