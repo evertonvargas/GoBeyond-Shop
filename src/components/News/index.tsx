@@ -45,7 +45,6 @@ export function News() {
             ) : null}
           </div>
           
-          
           <div>
             <input
               type="email"
