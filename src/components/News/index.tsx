@@ -1,4 +1,4 @@
-import { useFormik } from "Formik";
+import { useFormik } from 'formik'
 import * as yup from "yup";
 
 import styles from "./styles.module.scss";
