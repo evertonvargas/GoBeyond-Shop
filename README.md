@@ -18,6 +18,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Sass](https://sass-lang.com/)
 - [Yup](https://www.npmjs.com/package/yup?activeTab=readme)
 - [Formik](https://formik.org/)
+- [Swiper](https://swiperjs.com/)
 
 ## :arrow_forward: Instalação e uso
 
