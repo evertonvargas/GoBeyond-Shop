@@ -12,7 +12,7 @@ Site: https://go-beyond-shop.vercel.app/
 
 ## :crystal_ball: Technologies
 
-This project was developed using the following technologies:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
@@ -21,14 +21,14 @@ This project was developed using the following technologies:
 
 ## :arrow_forward: Instalação e uso
 
-Clone the project and access the folder
+Clone o projeto e acesse a pasta
 
 ```bash
 $ git clone https://github.com/evertonvargas/GoBeyond-shop.git
 
 ```
 
-Follow the steps below
+Siga os passos abaixo
 ```bash
 # Install the dependencies
 $ npm i or yarn
