@@ -16,6 +16,7 @@
 
       &.drop {
         position: relative;
+        cursor: pointer;
 
         &:hover {
           color: var(--green);
