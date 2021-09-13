@@ -11,7 +11,7 @@ const validationSchema = yup.object().shape({
   username: yup.string().required("Preechimento obrigatório"),
 });
 
-export function News() {
+export function Newsletter() {
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
       onSubmit: (values, form) => {

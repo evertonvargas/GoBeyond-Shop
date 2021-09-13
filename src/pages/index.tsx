@@ -3,7 +3,7 @@ import Head from "next/head";
 import { SliderFullWidth } from "../components/SliderFullWidth";
 import { SliderSwiper } from "../components/SliderSwiper";
 import { Footer } from "../components/Footer";
-import { News } from "../components/News";
+import { Newsletter } from "../components/Newsletter";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <SliderFullWidth />
         <SliderSwiper />
-        <News />
+        <Newsletter />
         <Footer />
       </main>
     </>

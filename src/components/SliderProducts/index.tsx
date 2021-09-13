@@ -1,3 +1,5 @@
+//Faltou implementa a lógica dos slides
+
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import { Card } from "../Card";
