@@ -14,7 +14,9 @@ const validationSchema = yup.object().shape({
 export function News() {
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
-      onSubmit: (values, form) => {},
+      onSubmit: (values, form) => {
+        console.log("Cadastro ok")
+      },
       validationSchema,
       initialValues: {
         email: "",

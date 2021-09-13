@@ -15,9 +15,13 @@
 
       > a:first-child {
         margin-right: 1rem;
+      }
 
-        &:hover {
-          color: var(--green);
+      a:hover {
+        color: var(--green);
+
+        span{
+          color: var(--black-900);
         }
       }
 
