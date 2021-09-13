@@ -41,7 +41,7 @@ export function News() {
               }
             />
             {touched.username && errors.username ? (
-              <span className={styles.error}>{errors.username}</span>
+              <span>{errors.username}</span>
             ) : null}
           </div>
           
@@ -57,7 +57,7 @@ export function News() {
               className={touched.email && errors.email && styles.borderError}
             />
             {touched.email && errors.email ? (
-              <span className={styles.error}>{errors.email}</span>
+              <span>{errors.email}</span>
             ) : null}
           </div>
           <button type="submit" onClick={() => handleSubmit()}>

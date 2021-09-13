@@ -1,4 +1,4 @@
-.Container {
+.container {
   color: var(--gray-800);
   display: flex;
   gap: 2rem;
@@ -60,13 +60,13 @@
 }
 
 @media (max-width: 1150px) {
-  .Container {
+  .container {
     nav ul li {
       display: none;
     }
   }
 
-  .MenuHamburguer {
+  .menuHamburguer {
     color: var(--gray-800);
     width: 200px;
     position: absolute;

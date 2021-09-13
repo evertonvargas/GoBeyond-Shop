@@ -1,4 +1,4 @@
-.Content {
+.content {
   border-bottom: 1px solid var(--gray-700);
   padding-bottom: 3px;
 
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 760px) {
-  .Content {
+  .content {
     gap: 0.5rem;
     order: 3;
     flex-grow: 1;

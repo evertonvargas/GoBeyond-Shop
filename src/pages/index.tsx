@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { SliderFullWidth } from "../components/SliderFullWidth";
 
-import { News } from "../components/News";
-import { Footer } from "../components/Footer";
+import { SliderFullWidth } from "../components/SliderFullWidth";
 import { SliderSwiper } from "../components/SliderSwiper";
+import { Footer } from "../components/Footer";
+import { News } from "../components/News";
 
 export default function Home() {
   return (

@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { MdAddShoppingCart } from "react-icons/md";
+
 import { formatPrice } from "../../util/format";
+import { useCart } from "../../hooks/useCart"
 
 import styles from "./styles.module.scss";
 
@@ -11,7 +14,15 @@ interface CardProps {
   priceOld: number;
 }
 
-export function Card({ img, title, price, priceOld }: CardProps) {
+export function Card({img, title, price, priceOld }: CardProps) {
+  const [cartItem, setCartItem] = useState(0);
+  const {addCart} = useCart();
+
+  function handleAddCart(){
+    setCartItem(cartItem + 1);
+    addCart();
+  }
+
   return (
     <section className={styles.card}>
       <div>
@@ -39,8 +50,10 @@ export function Card({ img, title, price, priceOld }: CardProps) {
       <p>
         ou em 9x de<span>{formatPrice(price / 9)}</span>
       </p>
-      <button type="button">
-        <MdAddShoppingCart size={32} color="#FFF" />
+      <button type="button" onClick={handleAddCart}>
+        <div>
+          <MdAddShoppingCart size={22} color="#FFF" /> {cartItem}
+        </div>
         <span>ADICIONAR AO CARRINHO</span>
       </button>
     </section>

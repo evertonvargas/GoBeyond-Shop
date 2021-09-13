@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import styles from "./styles.module.scss";
@@ -24,7 +23,7 @@ export function SliderFullWidth() {
 
   return (
     <section className={styles.slide}>
-      <button className={styles.prev} onClick={handlePrevSlide}>
+      <button onClick={handlePrevSlide}>
         <MdKeyboardArrowLeft size={50} />
       </button>
       <img src={images[slide]} alt="" />
@@ -34,7 +33,7 @@ export function SliderFullWidth() {
         <span className={slide===2 ? styles.active : null} onClick={()=> setSlide(2)}></span>
         <span className={slide===3 ? styles.active : null} onClick={()=> setSlide(3)}></span>
       </div>
-      <button className={styles.next} onClick={handleNextSlide}>
+      <button onClick={handleNextSlide}>
         <MdKeyboardArrowRight size={50} />
       </button>
     </section>

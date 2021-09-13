@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
+
 import { useMenu } from "../../../hooks/useMenu";
 
 import styles from "./styles.module.scss";
@@ -10,8 +11,8 @@ export function Menu() {
   const [dropdownCategory2, setDropdownCategory2] = useState(false);
 
   return (
-    <div className={menu ? styles.MenuHamburguer : styles.Container}>
-      <nav className={menu ? styles.MenuHamburguer : null}>
+    <div className={menu ? styles.menuHamburguer : styles.container}>
+      <nav className={menu ? styles.menuHamburguer : null}>
         <ul>
           <li>
             <a href="">Home</a>

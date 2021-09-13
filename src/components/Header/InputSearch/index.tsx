@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 
 export function InputSearch() {
   return (
-    <form action="" className={styles.Content}>
+    <form action="" className={styles.content}>
       <input type="text" placeholder="O que você está procurando ?" />
       <button>
         <BsSearch />

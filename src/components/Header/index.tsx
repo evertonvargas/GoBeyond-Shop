@@ -1,12 +1,15 @@
 import { FaRegUser } from "react-icons/fa";
 import { MdAddShoppingCart } from "react-icons/md";
+
+import { useCart } from "../../hooks/useCart"
+import { MenuHamburguer } from "./MenuHamburguer";
 import { InputSearch } from "./InputSearch";
 import { Menu } from "./Menu";
 
 import styles from "./styles.module.scss";
-import { MenuHamburguer } from "./MenuHamburguer";
 
 export function Header() {
+  const {cart} = useCart();
 
   return (
     <header className={styles.headerContainer}>
@@ -21,6 +24,7 @@ export function Header() {
           </a>
           <a href="">
             <MdAddShoppingCart />
+            <span>{cart}</span>
           </a>
         </div>
       </div>

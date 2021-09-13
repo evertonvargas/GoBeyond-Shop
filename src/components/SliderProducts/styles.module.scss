@@ -41,11 +41,11 @@
         filter: brightness(0.7);
       }
   
-      &.prevSlide{
+      &:nth-of-type(1){
         left: 1.5rem;
       }
   
-      &.nextSlide{
+      &:nth-of-type(2){
         right: 1.5rem;
       }
     }

@@ -50,7 +50,7 @@
         display: flex;
         flex-direction: column;
 
-        span.error {
+        span {
           color: var(--red-700);
           font-size: 1.3rem;
           font-weight: 400;
@@ -63,7 +63,7 @@
         background: var(--black-900);
         padding: 6px 3rem;
         border: none;
-        height: 50px;
+        max-height: 50px;
         border-radius: 6px;
 
         transition: filter 0.2s;
